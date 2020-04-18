@@ -19,14 +19,14 @@ Thus, after building your FASTA alignment from carefully curated data, the first
 copy example newick string
 ```
 
-We will then import it in R to extract branch length and produce a distance matrix that ABGD can read (phylip format) 
-
+We will then import it in R to extract branch length and produce a distance matrix that ABGD can read (phylip format)<br/>
+ 
 ```
 require(ape)
-my_tree <- read.tree(x=read.tree("RAxML.tre") # Import tree
-my_matrix <- cophenetic.phylo(my_tree) # Extract branch length
-
 require(phangorn)
-writeDist(my_matrix, "RAxML_dist_for_ABGD.txt", format ="phylip")
+my_tree <- read.tree(x=read.tree("RAxML.tre")                       # Import tree
+my_matrix <- cophenetic.phylo(my_tree)                              # Extract branch length
+writeDist(my_matrix, "RAxML_dist_for_ABGD.txt", format ="phylip")   # Export distance matrix
 ```
+
 
