@@ -17,6 +17,9 @@ Thus, after building your FASTA alignment from carefully curated data, the first
 
 ```
 copy example newick string
+
+((((((((taxon1:0.22177,(((taxon6:0.596697,taxon8:0.232903):0.077822,........,taxon65:0.0065);
+
 ```
 
 We will then import it in R to extract branch lengths and produce a distance matrix that ABGD can read (phylip format)<br/>
