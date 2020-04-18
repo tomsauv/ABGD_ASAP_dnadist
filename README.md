@@ -13,7 +13,7 @@ Modelling may also help reduce the impact of potential sequence errors (in e.g. 
 
 2- We can use an incomplete matrix to keep maximum sequence information (i.e. when sequences may vary slightly in length)
 
-Thus, after building your FASTA alignment of curated data, the first step is to run your phylogenetic analysis with a serious tree builder (e.g. RAxML or Mr. Bayes). We will not cover this here, but we will use the resulting newick string (in a newick/tree file) as a starting point for the present tutorial. You may need to open the newick/tree file to remove unecessary lines depending on the programs you use for tree buidling, the line should start by a parenthesis '(' and finish by ');'
+Thus, after building your FASTA alignment of curated data, the first step is to run your phylogenetic analysis with a serious tree builder (e.g. RAxML or Mr. Bayes). We will not cover this here, but we will use the resulting newick string (in a newick/tree file) as a starting point for the present tutorial. You may need to open the newick/tree file to remove unecessary lines depending on the programs you use for tree buidling, the line should start by a parenthesis ```(``` and finish by ```);```
 
 
 
