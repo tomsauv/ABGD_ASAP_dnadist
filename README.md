@@ -2,7 +2,7 @@
 
 This tutorial will present how to run **Automated Barcode Gap Discovery** (or **ABGD**) to obtain species hypotheses (i.e. species delimitation analyses)
 
-Running ABGD can be confusing at first and interpetating its output eventually prone to errors. In my opinion there is also a better way to run it with some upstream work, which you will have to do anyway to publish your results
+Running ABGD can be confusing at first and interpreting its output eventually prone to errors. In my opinion there is also a better way to run it with some upstream work, which you will have to do anyway to publish your results
 
 We will do so using a matrix of pairwise distances extracted from branch lengths of a high quality tree (i.e. ML or Bayes) rather than letting ABGD compute Jukes Cantor distances for us from a multiple alignment in FASTA format (by default)
 
