@@ -19,7 +19,7 @@ Thus, after building your FASTA alignment from carefully curated data, the first
 copy example newick string
 ```
 
-We will then import it in R to extract branch length and produce a distance matrix that ABGD can read (phylip format)<br/>
+We will then import it in R to extract branch lengths and produce a distance matrix that ABGD can read (phylip format)<br/>
  
 ```
 require(ape)
