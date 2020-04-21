@@ -30,7 +30,7 @@ writeDist(my_matrix, "RAxML_dist_for_ABGD.txt", format ="phylip")   # Export dis
 ```
 
 If you open ```RAxML_dist_for_ABGD.txt``` with a simple text editor, values will be space-delimited<br/>
-In the example below, there are 80 taxa and each taxon name is followed by values representing pairwise distances and 0s are on the diagonal (e.g. taxon1 vs taxon1)
+In the example below, there are 80 taxa and each taxon name is followed by values representing pairwise distances and 0s are on the diagonal (e.g. taxon1 vs. taxon1)
 
 ```
 80 
