@@ -24,7 +24,7 @@ We will then import it in R to extract branch lengths and produce a distance mat
 ```
 require(ape)
 require(phangorn)
-my_tree <- read.tree("RAxML.tre").                                  # Import tree
+my_tree <- read.tree("RAxML.tre")                                   # Import tree
 my_matrix <- cophenetic.phylo(my_tree)                              # Extract branch lengths
 writeDist(my_matrix, "RAxML_dist_for_ABGD.txt", format ="phylip")   # Export distance matrix
 ```
