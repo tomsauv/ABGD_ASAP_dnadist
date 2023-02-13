@@ -3,7 +3,7 @@
 There are several advantages in using a distance matrix from a pre-computed tree for species delimitation with ABGD/ASAP:<br/>
 
 1- We can use a complex evolutionary model (e.g. GTR) to better estimate distances between sequences<br/>
-Such modelling may also help reduce the impact of potential sequence errors on delimitation (e.g. from public data or your own data...)
+Such modelling may also help reduce the impact of potential sequence errors on delimitation (e.g. nucleotide errors from public data or in your own data...)
 
 2- We can use an incomplete DNA alignment to keep maximum sequence information, i.e., in which some sequences may vary drastically in length
 
