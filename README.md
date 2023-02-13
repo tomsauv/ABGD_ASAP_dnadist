@@ -2,10 +2,10 @@
 
 There are several advantages in using a distance matrix from a pre-computed tree for species delimitation with ABGD/ASAP :<br/>
 
-1- We can use a complex evolutionary model (e.g. GTR) to better estimate distances between sequences<br/>
-Such modelling may also help reduce the impact of potential sequence errors on delimitation (e.g. nucleotide errors from public data or in your own data...)
+1- We can use a complex evolutionary model (e.g. GTR) to better estimate distances between sequences.<br/>
+Such modelling may also help reduce the impact of potential sequence errors on delimitation (e.g. nucleotide errors from public data or in your own data...).
 
-2- We can use an incomplete DNA alignment to keep maximum sequence information in which some sequences may vary drastically in length
+2- We can use an incomplete DNA alignment to keep maximum sequence information in which some sequences may vary drastically in length.
 
 After building your FASTA alignment from carefully curated data, the first step is to run your phylogenetic analysis with a serious tree builder (e.g. RAxML). The resulting newick string (```.nwk``` or ```.tre``` file) may need to opened in a simple text editor to remove unecessary lines depending on the programs you used for tree building - here, for the following R snippets to work, we want the line to start by a parenthesis ```(``` and finish by ```);``` as in the example below. this is 'barebone' newick format.
 
