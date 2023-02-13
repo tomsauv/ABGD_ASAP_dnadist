@@ -24,8 +24,8 @@ my_matrix <- cophenetic.phylo(my_tree)                              # Extract br
 writeDist(my_matrix, "RAxML_dist_for_ABGD_ASAP.txt", format ="phylip")   # Export distance matrix
 ```
 
-If you open ```RAxML_dist_for_ABGD_ASAP.txt``` with a simple text editor, values will be space-delimited on each row<br/>
-In the example below, there are 80 taxa and each taxon name is followed by values representing pairwise distances and 0s are on the diagonal (e.g. taxon1 vs. taxon1 is 0<br/>
+If you open ```RAxML_dist_for_ABGD_ASAP.txt``` with a simple text editor, values will be space-delimited on each row.<br/>
+In the example below, there are 80 taxa and each taxon name is followed by values representing pairwise distances and 0s are on the diagonal (e.g. taxon1 vs. taxon1 is 0)<br/>
 
 ```
 80 
