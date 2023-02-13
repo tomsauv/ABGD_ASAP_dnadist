@@ -14,7 +14,7 @@ After building your FASTA alignment from carefully curated data, the first step 
 ```
 
 We will then import it in R to extract the tree branch lengths and produce a distance matrix that ABGD/ASAP can read (phylip format)<br/>
-We will need package ```ape``` and ```phangorn``` to do so in the most easiest way. Thus you have to download these packages prior from CRAN and install them.
+We will need package ```ape``` and ```phangorn``` to do so the easy way. Thus you have to download these packages from CRAN and install them.
  
 ```
 require(ape)
