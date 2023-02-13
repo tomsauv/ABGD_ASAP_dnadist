@@ -7,7 +7,7 @@ Such modelling may also help reduce the impact of potential sequence errors on d
 
 2- We can use an incomplete DNA alignment to keep maximum sequence information in which some sequences may vary drastically in length
 
-After building your FASTA alignment from carefully curated data, the first step is to run your phylogenetic analysis with a serious tree builder (e.g. RAxML). The resulting newick string (```.nwk``` or ```.tre``` file) may need to opened in a simple text editor to remove unecessary lines depending on the programs you used for tree building - here, for the follwoing R snippets to work, we want the line to start by a parenthesis ```(``` and finish by ```);``` as in the example below
+After building your FASTA alignment from carefully curated data, the first step is to run your phylogenetic analysis with a serious tree builder (e.g. RAxML). The resulting newick string (```.nwk``` or ```.tre``` file) may need to opened in a simple text editor to remove unecessary lines depending on the programs you used for tree building - here, for the following R snippets to work, we want the line to start by a parenthesis ```(``` and finish by ```);``` as in the example below. this is 'barebone' newick format.
 
 ```
 ((((((((taxon1:0.22177,(((taxon6:0.596697,taxon8:0.232903):0.077822,........,taxon65:0.0065);
