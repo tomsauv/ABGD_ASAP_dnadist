@@ -37,5 +37,5 @@ taxon3 2.162966 1.412188 1.048394 0 ...
 ...
 taxon80 0.761922 2.418198 2.054404 2.481348 ... 0
 ```
-The distance file is now ready to be used on the [ABGD](https://bioinfo.mnhn.fr/abi/public/abgd/abgdweb.html) or [ASAP](https://bioinfo.mnhn.fr/abi/public/asap/asapweb.html) webservers :<br/>
+The distance file is now ready to be used on the [ABGD](https://bioinfo.mnhn.fr/abi/public/abgd/abgdweb.html) or [ASAP](https://bioinfo.mnhn.fr/abi/public/asap/asapweb.html) webservers with appropriate parameters.<br/>
 
