@@ -3,11 +3,11 @@
 There are several advantages in using a distance matrix from a pre-computed tree for species delimitation with ABGD/ASAP:<br/>
 
 1- We can use a complex evolutionary model (e.g. GTR) to better estimate distances between sequences<br/>
-Such modelling may help reduce the impact of potential sequence errors on delimitation (e.g. from public data or your own data...)
+Such modelling may also help reduce the impact of potential sequence errors on delimitation (e.g. from public data or your own data...)
 
-2- We can use an incomplete matrix to keep maximum sequence information (i.e. when sequences may vary slightly in length)
+2- We can use an incomplete DNA alignment to keep maximum sequence information, i.e., in which some sequences may vary drastically in length
 
-Thus, after building your FASTA alignment from carefully curated data, the first step is to run your phylogenetic analysis with a serious tree builder (e.g. RAxML or MrBayes). We will not cover this here, but we will use the resulting newick string (in a newick/tree file) as a starting point for the present tutorial. You may need to open the newick/tree file with a simple text editor to remove unecessary lines depending on the programs you used for tree building - the line should start by a parenthesis ```(``` and finish by ```);``` as in the example below
+After building your FASTA alignment from carefully curated data, the first step is to run your phylogenetic analysis with a serious tree builder (e.g. RAxML). The resulting newick string (in a newick/tree file, .nwk .tre) as a starting point for the present tutorial. You may need to open the newick/tree file with a simple text editor to remove unecessary lines depending on the programs you used for tree building - the line should start by a parenthesis ```(``` and finish by ```);``` as in the example below
 
 ```
 ((((((((taxon1:0.22177,(((taxon6:0.596697,taxon8:0.232903):0.077822,........,taxon65:0.0065);
