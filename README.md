@@ -1,4 +1,4 @@
-# Running ABGD/ASAP
+# Prepping distance matrix for ABGD/ASAP
 
 There are several advantages in using a distance matrix from a pre-computed tree for species delimitation with ABGD/ASAP :<br/>
 
