@@ -13,19 +13,19 @@ After building your FASTA alignment from carefully curated data, the first step 
 ((((((((taxon1:0.22177,(((taxon6:0.596697,taxon8:0.232903):0.077822,........,taxon65:0.0065);
 ```
 
-We will then import it in R to extract the tree branch lengths and produce a distance matrix that ABGD/ASAP can read (phylip format)<br/>
+We will then import it in R to extract the tree branch lengths and produce a distance matrix that ABGD/ASAP can read (phylip format).<br/>
 We will need package ```ape``` and ```phangorn``` to do so the easy way. Thus you have to download these packages from CRAN and install them.
  
 ```
 require(ape)
 require(phangorn)
-my_tree <- read.tree("RAxML.tre")                                   # Import tree
-my_matrix <- cophenetic.phylo(my_tree)                              # Extract branch lengths
+my_tree <- read.tree("RAxML.tre")                                        # Import the tree
+my_matrix <- cophenetic.phylo(my_tree)                                   # Extract branch lengths
 writeDist(my_matrix, "RAxML_dist_for_ABGD_ASAP.txt", format ="phylip")   # Export distance matrix
 ```
 
 If you open ```RAxML_dist_for_ABGD_ASAP.txt``` with a simple text editor, values will be space-delimited on each row.<br/>
-In the example below, there are 80 taxa and each taxon name is followed by values representing pairwise distances and 0s are on the diagonal (e.g. taxon1 vs. taxon1 is 0)<br/>
+In the example below, there are 80 taxa and each taxon name is followed by values representing pairwise distances and 0s are on the diagonal (e.g. taxon1 vs. taxon1 is 0).<br/>
 
 ```
 80 
