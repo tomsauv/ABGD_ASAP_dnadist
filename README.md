@@ -16,8 +16,7 @@ After building your FASTA alignment from carefully curated data, the first step 
 ```
 # Make it a PHYLIP dnadist
 
-We now import our newick string in R to extract the tree branch lengths and produce a distance matrix that ABGD/ASAP can read (phylip format).<br/>
-We will need package ```ape``` and ```phangorn``` to do so the easy way. Thus you have to download these packages from CRAN and install them prior.
+We now import our newick string in R to extract the tree branch lengths and produce a distance matrix that ABGD/ASAP can read (phylip format). We will need package ```ape``` and ```phangorn``` to do so the easy way. Thus you have to download these packages from CRAN and install them prior.<br/>
  
 ```
 require(ape)
