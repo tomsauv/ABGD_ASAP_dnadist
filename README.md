@@ -21,8 +21,8 @@ We now import our newick string in R to extract the tree branch lengths and prod
 ```
 require(ape)
 require(phangorn)
-my_tree <- read.tree("RAxML.tre")                                        # Import the tree
-my_matrix <- cophenetic.phylo(my_tree)                                   # Extract branch lengths
+my_tree <- read.tree("RAxML.tre")                                           # Import the tree
+my_matrix <- cophenetic.phylo(my_tree)                                      # Extract branch lengths
 writeDist(my_matrix, "RAxML_dnadist_for_ABGD_ASAP.txt", format ="phylip")   # Export distance matrix
 ```
 
