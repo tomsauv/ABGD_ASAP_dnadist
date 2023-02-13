@@ -1,15 +1,9 @@
-# Running ABGD (the better way!)
+# Running ABGD/ASAP
 
-This tutorial will present how to run **Automated Barcode Gap Discovery** (or **ABGD**) to obtain species hypotheses (i.e. species delimitation analyses)
+There are several advantages in using a distance matrix from a pre-computed tree for species delimitation with ABGD/ASAP:<br/>
 
-Running ABGD can be confusing at first and interpreting its output is eventually prone to errors. In my opinion there is also a better way to run it with some upstream work, which you will have to do anyway to publish your results
-
-We will run ABGD using a matrix of pairwise distances extracted from branch lengths of a high quality tree (i.e. ML or Bayesian) rather than letting ABGD compute Jukes Cantor distances for us from a multiple alignment in FASTA format (by default)
-
-There are several advantages in getting our distance matrix from a pre-computed tree:
-
-1- We can use a more complex evolutionary model (e.g. GTR) to estimate distances more accurately<br/>
-Modelling may also help reduce the impact of potential sequence errors (e.g. from public data) on delimitation
+1- We can use a complex evolutionary model (e.g. GTR) to better estimate distances between sequences<br/>
+Such modelling may help reduce the impact of potential sequence errors on delimitation (e.g. from public data or your own data...)
 
 2- We can use an incomplete matrix to keep maximum sequence information (i.e. when sequences may vary slightly in length)
 
@@ -19,18 +13,19 @@ Thus, after building your FASTA alignment from carefully curated data, the first
 ((((((((taxon1:0.22177,(((taxon6:0.596697,taxon8:0.232903):0.077822,........,taxon65:0.0065);
 ```
 
-We will then import it in R to extract branch lengths and produce a distance matrix that ABGD can read (phylip format)<br/>
+We will then import it in R to extract branch lengths and produce a distance matrix that ABGD/ASAP can read (phylip format)<br/>
  
 ```
 require(ape)
 require(phangorn)
 my_tree <- read.tree("RAxML.tre")                                   # Import tree
 my_matrix <- cophenetic.phylo(my_tree)                              # Extract branch lengths
-writeDist(my_matrix, "RAxML_dist_for_ABGD.txt", format ="phylip")   # Export distance matrix
+writeDist(my_matrix, "RAxML_dist_for_ABGD_ASAP.txt", format ="phylip")   # Export distance matrix
 ```
 
-If you open ```RAxML_dist_for_ABGD.txt``` with a simple text editor, values will be space-delimited<br/>
-In the example below, there are 80 taxa and each taxon name is followed by values representing pairwise distances and 0s are on the diagonal (e.g. taxon1 vs. taxon1)
+If you open ```RAxML_dist_for_ABGD_ASAP.txt``` with a simple text editor, values will be space-delimited<br/>
+In the example below, there are 80 taxa and each taxon name is followed by values representing pairwise distances and 0s are on the diagonal (e.g. taxon1 vs. taxon1<br/>
+On the distance matrix rows, values are space-delimited<br/>
 
 ```
 80 
@@ -43,6 +38,10 @@ taxon3 2.162966 1.412188 1.048394 0 ...
 taxon80 0.761922 2.418198 2.054404 2.481348 ... 0
 ```
 
+This tutorial will present how to run **Automated Barcode Gap Discovery** (or **ABGD**) to obtain species hypotheses (i.e. species delimitation analyses)
 
+Running ABGD can be confusing at first and interpreting its output is eventually prone to errors. In my opinion there is also a better way to run it with some upstream work, which you will have to do anyway to publish your results
+
+We will run ABGD using a matrix of pairwise distances extracted from branch lengths of a high quality tree (i.e. ML or Bayesian) rather than letting ABGD compute Jukes Cantor distances for us from a multiple alignment in FASTA format (by default)
 
 
