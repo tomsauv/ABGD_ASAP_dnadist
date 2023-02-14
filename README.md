@@ -41,3 +41,4 @@ taxon80 0.761922 2.418198 2.054404 2.481348 ... 0
 ```
 The distance file is now ready to be used on the [ABGD](https://bioinfo.mnhn.fr/abi/public/abgd/abgdweb.html) or [ASAP](https://bioinfo.mnhn.fr/abi/public/asap/asapweb.html) webservers with appropriate parameters.<br/>
 
+PS: It's always good practice to avoid special characters in the fasta titles of sequences (i.e. taxa names) to insure data portability across different tools. Use underscore or similar instead of special characters or blank spaces. If you encounter issues with running ABGD/ASAP, a first check may be to inspect your taxa names. 
